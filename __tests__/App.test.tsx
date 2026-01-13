@@ -1,13 +1,13 @@
-/**
- * @format
- */
-
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
-import App from '../App';
+import App from '../src/App';
+import { render, screen } from '@testing-library/react-native';
 
-test('renders correctly', async () => {
-  await ReactTestRenderer.act(() => {
-    ReactTestRenderer.create(<App />);
+describe('App', () => {
+  it('renders correctly', () => {
+    render(<App />);
+
+    const welcomeMessage = screen.getByText(/Hola Test User!/i);
+
+    expect(welcomeMessage).toBeTruthy();
   });
 });

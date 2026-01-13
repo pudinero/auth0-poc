@@ -2,13 +2,13 @@ import React, {Fragment, useState} from 'react';
 import {
   Alert,
   Platform,
-  SafeAreaView,
   StyleSheet,
   Text,
   TextInput,
   View,
 } from 'react-native';
-import {useAuth0, Credentials, LoginWithOTPOptions} from 'react-native-auth0';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {useAuth0, Credentials, LoginOtpParameters} from 'react-native-auth0';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import {useNavigation} from '@react-navigation/core';
@@ -98,7 +98,7 @@ export default function CustomLogin(): React.JSX.Element {
   }
 
   const onLoginWithOTPCredentials = async () => {
-    const options: LoginWithOTPOptions = {
+    const options: LoginOtpParameters = {
       otp: userOtpCode!,
       mfaToken: mfaToken!,
       audience: config.audience,

@@ -2,13 +2,13 @@ import {useNavigation, useTheme} from '@react-navigation/core';
 import React, {Fragment} from 'react';
 import {
   Platform,
-  SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import ArrowLeftIcon from '../icons/ArrowLeft.svg';
 
 type HeaderProps = {
@@ -26,6 +26,7 @@ export default function Header({
     <Fragment>
       <StatusBar backgroundColor={(colors as any).header} />
       <SafeAreaView
+        edges={['top']}
         style={[
           styles.headerSafeAreaView,
           {
@@ -34,6 +35,7 @@ export default function Header({
         ]}
       />
       <SafeAreaView
+        edges={['left', 'right']}
         style={[
           styles.header,
           {

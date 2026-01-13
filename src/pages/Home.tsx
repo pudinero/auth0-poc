@@ -2,12 +2,12 @@ import React, {Fragment} from 'react';
 import {
   Alert,
   Platform,
-  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {useAuth0, Credentials} from 'react-native-auth0';
 import Header from '../components/Header';
 import Card from '../components/Card';
@@ -63,6 +63,7 @@ export default function Home(): React.JSX.Element {
         title={loggedIn ? `Hola ${user.name}!` : 'Iniciar sesión con Auth0'}
       />
       <SafeAreaView
+        edges={['left', 'right']}
         style={[styles.container, {backgroundColor: colors.background}]}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View
