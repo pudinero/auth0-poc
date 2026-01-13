@@ -13,38 +13,48 @@ There are two methods for login:
 The application follows a specific flow depending on the chosen login method.
 
 ### Default Screen
-The entry point of the application.
-![Home Screen](./screenshots/home.png)
+The entry point of the application.\
+<br />
+<img src="./screenshots/home.png" alt="Home Screen" width="200"/>
 
 ### Option 1: Auth0 Integrated Login
 If the user selects the standard Auth0 login:
 
-1.  **Login Screen**:
-    ![Auth0 Login](./screenshots/auth0-login.png)
-2.  **OTP Verification**:
-    ![Auth0 OTP](./screenshots/auth0-otp.png)
-3.  **Logged In State**:
-    ![Auth0 Logged](./screenshots/auth0-logged.png)
+1.  **Login Screen**:\
+<br />
+<img src="./screenshots/auth0-login.png" alt="Auth0 Login" width="200"/>
+    
+2.  **OTP Verification**:\
+<br />
+<img src="./screenshots/auth0-otp.png" alt="Auth0 OTP" width="200"/>
+3.  **Logged In State**:\
+<br />
+<img src="./screenshots/auth0-logged.png" alt="Auth0 Logged" width="200"/>
 
 ### Option 2: Manual Login
 If the user selects the manual custom form login:
 
-1.  **Manual Login Screen**:
-    ![Manual Login](./screenshots/manual-login.png)
-2.  **OTP Verification**:
-    ![Manual OTP](./screenshots/manual-otp.png)
-3.  **Logged In State**:
-    ![Manual Logged](./screenshots/manual-logged.png)
+1.  **Manual Login Screen**:\
+<br />
+<img src="./screenshots/manual-login.png" alt="Manual Login" width="200"/>
+2.  **OTP Verification**:\
+<br />
+<img src="./screenshots/manual-otp.png" alt="Manual OTP" width="200"/>
+3.  **Logged In State**:\
+<br />
+<img src="./screenshots/manual-logged.png" alt="Manual Logged" width="200"/>
 
 ### Authenticated State
 Once logged in via either method:
 
-*   **Home (Logged)**: Shows the home screen with the logged-in user's name.
-    ![Home Logged](./screenshots/home-logged.png)
+*   **Home (Logged)**: Shows the home screen with the logged-in user's name.\
+<br />
+<img src="./screenshots/home-logged.png" alt="Home Logged" width="200"/>
 
 ### Logout
-*   **Logout Screen**: This is the same screen as the Manual Login, but reflects the state if the user is already logged in (or handles the logout process).
-    ![Logout](./screenshots/logout.png)
+*   **Logout Screen**: This is the same screen as the Manual Login, but reflects the state if the user is already logged in (or handles the logout process).\
+<br />
+<img src="./screenshots/logout.png" alt="Logout" width="200"/>
 
 ---
 
