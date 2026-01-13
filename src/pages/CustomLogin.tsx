@@ -150,6 +150,7 @@ export default function CustomLogin(): React.JSX.Element {
         showBackButton={true}
       />
       <SafeAreaView
+        edges={['left', 'right']}
         style={[styles.container, {backgroundColor: colors.background}]}>
         <View style={[styles.container, {backgroundColor: colors.background}]}>
           <View style={styles.loginContainer}>
