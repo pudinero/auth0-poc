@@ -62,6 +62,17 @@ Once logged in via either method:
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
+## Environment setup (local development)
+
+Create a `.env` file at the project root with your Auth0 settings:
+
+AUTH0_CLIENT_ID=your_client_id
+AUTH0_CLIENT_SECRET=your_client_secret
+AUTH0_DOMAIN=your-tenant.us.auth0.com
+AUTH0_AUDIENCE=https://your-tenant.us.auth0.com/api/v2/
+
+Never commit real secrets to source control.
+
 ## Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.

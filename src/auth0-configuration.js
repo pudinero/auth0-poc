@@ -1,9 +1,10 @@
+import Config from 'react-native-config';
+
 const config = {
-  clientId: 'UWn8rj85SWfufHLxAVe8IOKf0Lo4qZom',
-  clientSecret:
-    '5QfGI5MHVkodWiIekogDi0BWQGb5SzOse2_0gTGLTR5v7yV8b8YsRSyv1ySqkwvy',
-  domain: 'dev-pudi-bewise.us.auth0.com',
-  audience: 'https://dev-pudi-bewise.us.auth0.com/api/v2/',
+  clientId: Config.AUTH0_CLIENT_ID || '',
+  clientSecret: Config.AUTH0_CLIENT_SECRET || '',
+  domain: Config.AUTH0_DOMAIN || '',
+  audience: Config.AUTH0_AUDIENCE || '',
 };
 
 export default config;
