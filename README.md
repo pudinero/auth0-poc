@@ -20,39 +20,42 @@ The entry point of the application.\
 ### Option 1: Auth0 Integrated Login
 If the user selects the standard Auth0 login:
 
-1.  **Login Screen**:\
+1.  **Login Screen**
 <br />
 <img src="./screenshots/auth0-login.png" alt="Auth0 Login" width="200"/>
     
-2.  **OTP Verification**:\
+2.  **OTP Verification**
 <br />
 <img src="./screenshots/auth0-otp.png" alt="Auth0 OTP" width="200"/>
-3.  **Logged In State**:\
+
+3.  **Logged In State**
 <br />
 <img src="./screenshots/auth0-logged.png" alt="Auth0 Logged" width="200"/>
 
 ### Option 2: Manual Login
 If the user selects the manual custom form login:
 
-1.  **Manual Login Screen**:\
+1.  **Manual Login Screen**
 <br />
 <img src="./screenshots/manual-login.png" alt="Manual Login" width="200"/>
-2.  **OTP Verification**:\
+
+2.  **OTP Verification**
 <br />
 <img src="./screenshots/manual-otp.png" alt="Manual OTP" width="200"/>
-3.  **Logged In State**:\
+
+3.  **Logged In State**
 <br />
 <img src="./screenshots/manual-logged.png" alt="Manual Logged" width="200"/>
 
 ### Authenticated State
 Once logged in via either method:
 
-*   **Home (Logged)**: Shows the home screen with the logged-in user's name.\
+*   **Home (Logged)**: Shows the home screen with the logged-in user's name.
 <br />
 <img src="./screenshots/home-logged.png" alt="Home Logged" width="200"/>
 
 ### Logout
-*   **Logout Screen**: This is the same screen as the Manual Login, but reflects the state if the user is already logged in (or handles the logout process).\
+*   **Logout Screen**: This is the same screen as the Manual Login, but reflects the state if the user is already logged in (or handles the logout process).
 <br />
 <img src="./screenshots/logout.png" alt="Logout" width="200"/>
 
@@ -66,10 +69,13 @@ Once logged in via either method:
 
 Create a `.env` file at the project root with your Auth0 settings:
 
+```env
 AUTH0_CLIENT_ID=your_client_id
 AUTH0_CLIENT_SECRET=your_client_secret
 AUTH0_DOMAIN=your-tenant.us.auth0.com
 AUTH0_AUDIENCE=https://your-tenant.us.auth0.com/api/v2/
+```
+
 
 Never commit real secrets to source control.
 
